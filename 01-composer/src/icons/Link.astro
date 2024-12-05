@@ -1,0 +1,21 @@
+---
+interface Props {
+  attributes?: string;
+}
+
+const { attributes } = Astro.props || '';
+---
+
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  fill='none'
+  viewBox='0 0 28 28'
+  class={attributes}
+>
+  <path
+    stroke='currentColor'
+    stroke-linecap='round'
+    stroke-linejoin='round'
+    stroke-width='1.75'
+    d='M19.833 8.166 8.166 19.834M9.334 8.166h10.5v10.5'></path>
+</svg>

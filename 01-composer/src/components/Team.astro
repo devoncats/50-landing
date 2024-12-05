@@ -1,0 +1,39 @@
+---
+import { members } from '@data/index';
+import Arrow from '@icons/Arrow.astro';
+import Link from '@icons/Link.astro';
+import MemberCard from './MemberCard.astro';
+---
+
+<section class='grid gap-8 py-16'>
+  <div class='py-6 flex items-center gap-2'>
+    <Arrow attributes='size-6' />
+    <h2 class='text-xl font-semibold'>Our team</h2>
+  </div>
+
+  <div class='grid grid-cols-4 gap-8'>
+    <p
+      class='col-span-2 text-[42px] leading-[46px] tracking-[-2px] font-semibold max-w-[547px]'
+    >
+      We are passionate about creating visually stunning and functional
+      solutions that communicate effectively.
+    </p>
+    {
+      members.map((member) => (
+        <MemberCard
+          asset={member.asset}
+          name={member.name}
+          position={member.position}
+        />
+      ))
+    }
+  </div>
+
+  <a
+    href='/'
+    class='w-full px-7 py-4 flex items-center border border-black-700 rounded-full text-lg font-semibold text-black-300 justify-center'
+  >
+    <span>See all members</span>
+    <Link attributes='size-8' />
+  </a>
+</section>

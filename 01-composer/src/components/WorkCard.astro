@@ -1,0 +1,17 @@
+---
+interface Props {
+  asset: { url: string; alt: string };
+  title: string;
+}
+
+const { asset, title } = Astro.props;
+---
+
+<div class='h-[627px] w-full border border-black-700 rounded-3xl'>
+  <img
+    src={asset.url}
+    alt={asset.alt}
+    class='max-w-[624px] max-h-[513px] h-full w-full object-cover rounded-t-3xl'
+  />
+  <p class='p-10 text-2xl font-semibold'>{title}</p>
+</div>

@@ -1,0 +1,22 @@
+---
+interface Props {
+  asset: { url: string; alt: string };
+  name: string;
+  position: string;
+}
+
+const { asset, name, position } = Astro.props;
+---
+
+<div class='w-full border border-black-700 rounded-3xl'>
+  <img
+    src={asset.url}
+    alt={asset.alt}
+    class='max-w-[624px] h-[282px] w-full object-cover rounded-t-3xl grayscale'
+  />
+
+  <div class='grid gap-2 px-4 py-6'>
+    <p class='text-lg font-semibold'>{name}</p>
+    <p class='font-semibold text-black-300'>{position}</p>
+  </div>
+</div>

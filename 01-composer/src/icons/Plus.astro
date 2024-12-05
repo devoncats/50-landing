@@ -1,0 +1,19 @@
+---
+interface Props {
+  attributes?: string;
+}
+
+const { attributes } = Astro.props || '';
+---
+
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  fill='currentColor'
+  viewBox='0 0 26 26'
+  class={attributes}
+>
+  <path
+    fill-rule='evenodd'
+    d='M13.714 1.333a.714.714 0 0 0-1.428 0v10.953H1.333a.714.714 0 0 0 0 1.428h10.953v10.953a.714.714 0 0 0 1.428 0V13.714h10.953a.714.714 0 0 0 0-1.428H13.714V1.333Z'
+    clip-rule='evenodd'></path>
+</svg>

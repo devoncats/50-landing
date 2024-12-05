@@ -1,16 +1,16 @@
 ---
 interface Props {
-  atributtes?: string;
+  attributes?: string;
 }
 
-const { atributtes } = Astro.props || '';
+const { attributes } = Astro.props || '';
 ---
 
 <svg
   xmlns='http://www.w3.org/2000/svg'
   fill='currentColor'
   viewBox='0 0 132 40'
-  class={atributtes}
+  class={attributes}
 >
   <path
     d='M22.778 18.432a3.521 3.521 0 0 0-1.007 2.82l-.018-.018a4.18 4.18 0 0 1-4.518 4.518l.017.018a3.54 3.54 0 1 0 3.197 3.193l.018.018a4.18 4.18 0 0 1 4.52-4.518l-.019-.018a3.536 3.536 0 0 0 3.638-4.727 3.533 3.533 0 0 0-5.825-1.286h-.003Z'
