@@ -1,5 +1,14 @@
-<section class='grid grid-flow-col place-content-between py-32'>
-  <articles class='w-full max-w-[783px]'>
+---
+import Altall from '@icons/logos/Altall.astro';
+import Kalo from '@icons/logos/Kalo.astro';
+import Kinua from '@icons/logos/Kinua.astro';
+import Krate from '@icons/logos/Krate.astro';
+import Massui from '@icons/logos/Massui.astro';
+import Tano from '@icons/logos/Tano.astro';
+---
+
+<section class='flex py-32'>
+  <articles class='w-full flex-[2_0_0%]'>
     <h2
       class='max-w-[783px] text-[34px] leading-10 tracking-[-1px] font-semibold'
     >
@@ -9,5 +18,19 @@
       that exceed my clients' expectations.
     </h2>
   </articles>
-  <articles>\</articles>
+
+  <articles class='w-full flex-1'>
+    <div class='grid grid-cols-2 w-full'>
+      <div class='flex-1 flex flex-col items-end gap-5 text-black-300'>
+        <Krate atributtes='h-10' />
+        <Massui atributtes='h-10' />
+        <Altall atributtes='h-10' />
+      </div>
+      <div class='flex-1 flex flex-col items-end gap-5 text-black-300'>
+        <Kalo atributtes='h-10' />
+        <Kinua atributtes='h-10' />
+        <Tano atributtes='h-10' />
+      </div>
+    </div>
+  </articles>
 </section>
