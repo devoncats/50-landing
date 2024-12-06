@@ -15,6 +15,7 @@
   "prettier.arrowParens": "always",
   "prettier.bracketSpacing": true,
   "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.resolveGlobalModules": true,
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },

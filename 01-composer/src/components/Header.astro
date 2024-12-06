@@ -3,17 +3,17 @@ import Pencil from '@icons/Pencil.astro';
 import Calendar from '@icons/Calendar.astro';
 ---
 
-<header class='py-12 w-full'>
-  <nav class='w-full h-28 flex rounded-3xl border border-black-700'>
-    <section class='w-48 grid place-content-center'>
+<header class='w-full py-12'>
+  <nav class='flex h-28 w-full rounded-3xl border border-black-700'>
+    <section class='grid w-48 place-content-center'>
       <a href='/'>
         <img src='/favicon.svg' alt='Composer logo' class='size-8' />
       </a>
     </section>
-    <section class='w-full grid border-l border-black-700'>
-      <section class='w-full flex flex-1'>
-        <section class='grid place-content-center flex-[4_0_0%]'>
-          <ul class='flex gap-10 font-semibold text-sm text-black-300'>
+    <section class='grid w-full border-l border-black-700'>
+      <section class='flex w-full flex-1'>
+        <section class='grid flex-[4_0_0%] place-content-center'>
+          <ul class='flex gap-10 text-sm font-semibold text-black-300'>
             <li><a href='/'>Projects</a></li>
             <li><a href='/'>About</a></li>
             <li><a href='/'>Team</a></li>
@@ -21,34 +21,34 @@ import Calendar from '@icons/Calendar.astro';
           </ul>
         </section>
         <section
-          class='w-full grid place-content-center flex-1 border-l border-black-700'
+          class='grid w-full flex-1 place-content-center border-l border-black-700'
         >
-          <div class='w-full grid gap-1 hover:cursor-pointer'>
+          <div class='grid w-full gap-1 hover:cursor-pointer'>
             <span class='block h-px w-[4.5rem] bg-black-300'></span>
             <span class='block h-px w-[4.5rem] bg-black-300'></span>
             <span class='block h-px w-[4.5rem] bg-black-300'></span>
           </div>
         </section>
       </section>
-      <section class='w-full flex flex-1 border-t border-black-700'>
+      <section class='flex w-full flex-1 border-t border-black-700'>
         <section
-          class='grid place-content-center flex-1 border-l border-black-700'
+          class='grid flex-1 place-content-center border-l border-black-700'
         >
           <a href='/' class='flex items-center justify-center gap-2'>
             <span class='w-3'>
               <Pencil />
             </span>
-            <span class='font-semibold text-sm text-black-300'> Services </span>
+            <span class='text-sm font-semibold text-black-300'> Services </span>
           </a>
         </section>
         <section
-          class='grid place-content-center flex-1 border-l border-black-700'
+          class='grid flex-1 place-content-center border-l border-black-700'
         >
           <a href='/' class='flex items-center justify-center gap-2'>
             <span class='w-3'>
               <Calendar />
             </span>
-            <span class='font-semibold text-sm text-black-300'>
+            <span class='text-sm font-semibold text-black-300'>
               Get in touch
             </span>
           </a>

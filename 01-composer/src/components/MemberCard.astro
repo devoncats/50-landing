@@ -8,11 +8,11 @@ interface Props {
 const { asset, name, position } = Astro.props;
 ---
 
-<div class='w-full border border-black-700 rounded-3xl'>
+<div class='w-full rounded-3xl border border-black-700'>
   <img
     src={asset.url}
     alt={asset.alt}
-    class='max-w-[624px] h-[282px] w-full object-cover rounded-t-3xl grayscale'
+    class='h-[282px] w-full max-w-[624px] rounded-t-3xl object-cover grayscale'
   />
 
   <div class='grid gap-2 px-4 py-6'>
