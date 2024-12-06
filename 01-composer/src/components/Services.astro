@@ -2,10 +2,11 @@
 import Arrow from '@icons/Arrow.astro';
 import ServiceCard from '@components/ServiceCard.astro';
 import { services } from '@data/index';
+import SectionLayout from '@layouts/SectionLayout.astro';
 ---
 
-<section class='grid gap-8 py-16'>
-  <div class='flex items-center gap-2'>
+<SectionLayout>
+  <div class='flex items-center gap-2 py-6'>
     <Arrow attributes='size-6' />
     <h2 class='text-xl font-semibold'>Our Services</h2>
   </div>
@@ -17,4 +18,4 @@ import { services } from '@data/index';
       ))
     }
   </div>
-</section>
+</SectionLayout>

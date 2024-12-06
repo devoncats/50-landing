@@ -3,9 +3,10 @@ import { works } from '@data/index';
 import Arrow from '@icons/Arrow.astro';
 import WorkCard from './WorkCard.astro';
 import Link from '@icons/Link.astro';
+import SectionLayout from '@layouts/SectionLayout.astro';
 ---
 
-<section class='grid gap-8 py-16'>
+<SectionLayout>
   <div class='flex items-center gap-2 py-6'>
     <Arrow attributes='size-6' />
     <h2 class='text-xl font-semibold'>Recent Work</h2>
@@ -22,4 +23,4 @@ import Link from '@icons/Link.astro';
     <span>View all work</span>
     <Link attributes='size-8' />
   </a>
-</section>
+</SectionLayout>

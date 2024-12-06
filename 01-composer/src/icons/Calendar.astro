@@ -1,4 +1,17 @@
-<svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 14 16'>
+---
+interface Props {
+  attributes?: string;
+}
+
+const { attributes } = Astro.props || '';
+---
+
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  fill='currentColor'
+  viewBox='0 0 14 16'
+  class={attributes}
+>
   <path
     fill-rule='evenodd'
     d='M10.21 1.25a.562.562 0 1 0-1.124 0v.938H4.21V1.25a.563.563 0 0 0-1.125 0v.938h-.938A2.062 2.062 0 0 0 .086 4.25v9c0 1.14.923 2.063 2.062 2.063h9c1.14 0 2.063-.924 2.063-2.063v-9c0-1.14-.924-2.063-2.063-2.063h-.937V1.25Zm1.876 5.438V4.25a.937.937 0 0 0-.938-.938h-.937v.938a.562.562 0 1 1-1.125 0v-.938H4.21v.938a.563.563 0 0 1-1.125 0v-.938h-.938a.937.937 0 0 0-.937.938v2.438h10.875ZM1.21 7.813h10.875v5.437c0 .518-.42.938-.938.938h-9a.937.937 0 0 1-.937-.938V7.812Z'
